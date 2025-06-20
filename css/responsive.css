@@ -1,0 +1,25 @@
+/* Soluzione qui */
+
+/*#region responsive for ipad*/
+@media screen and (min-width: 768px){ 
+
+    #topbar{
+        justify-content: flex-start; /* sopra i 758px il titolo si sposta a sinistra */
+    }
+
+    .recipe-origin{
+        display:block;
+    }
+
+    .recipe-name{
+        display: flex;
+        gap: 1rem;
+    }
+
+    main{
+        padding: 4rem;  /* aumenta il padding */
+    }
+
+
+}
+/*#endregion responsive for ipad*/
