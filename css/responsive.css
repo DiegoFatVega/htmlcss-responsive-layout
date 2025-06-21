@@ -38,11 +38,23 @@
         .btn {
             padding-left: 3rem;
             padding-right: 3rem;    
+            /* i bottoni si allargano */
         }
 
         .ads{
             display: block;
+            /* comparsa del banner pubblicitario */
         }
+
+        .presentation img{
+            float: left;
+            margin-right: 1rem ;
+            /* affianco il testo all`immagine */
+            
+        }
+
+
+
 
     }
 
