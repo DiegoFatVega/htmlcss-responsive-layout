@@ -1,25 +1,52 @@
 /* Soluzione qui */
 
 /*#region responsive for ipad*/
-@media screen and (min-width: 768px){ 
+@media screen and (min-width: 768px) {
 
-    #topbar{
-        justify-content: flex-start; /* sopra i 758px il titolo si sposta a sinistra */
+    #topbar {
+        justify-content: flex-start;
+        /* sopra i 758px il titolo si sposta a sinistra */
+
+        #logo {
+            font-size: 60px;
+        }
     }
 
-    .recipe-origin{
-        display:block;
-    }
+    main {
+        padding: 4rem;
 
-    .recipe-name{
-        display: flex;
-        gap: 1rem;
-    }
+        /* aumenta il padding */
+        .recipe-origin {
+            display: block;
+            /* visualizza la seconda parte del testo nascosto */
+        }
 
-    main{
-        padding: 4rem;  /* aumenta il padding */
+        .recipe-name {
+            display: flex;
+            gap: 0.5rem;
+            /* diamo dello spazio */
+        }
+
+        .quick-notes ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            /* disposizione a griglia della lista quick notes*/
+
+        }
+
+        .btn {
+            padding-left: 3rem;
+            padding-right: 3rem;    
+        }
+
+        .ads{
+            display: block;
+        }
+
     }
 
 
 }
+
 /*#endregion responsive for ipad*/
