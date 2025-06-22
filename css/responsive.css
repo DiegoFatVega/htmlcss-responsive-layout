@@ -1,6 +1,6 @@
 /* Soluzione qui */
 
-/*#region responsive for ipad*/
+/*#region responsive for tablet*/
 @media screen and (min-width: 768px) {
 
     #topbar {
@@ -30,35 +30,80 @@
         .quick-notes ul {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between; 
+            justify-content: space-between;
             /* disposizione a griglia della lista quick notes*/
-
         }
 
         .btn {
             padding-left: 3rem;
-            padding-right: 3rem;    
+            padding-right: 3rem;
             /* i bottoni si allargano */
         }
 
-        .ads{
+        .ads {
             display: block;
             /* comparsa del banner pubblicitario */
         }
 
-        .presentation img{
+        .presentation img {
             float: left;
-            margin-right: 1rem ;
+            margin-right: 1rem;
             /* affianco il testo all`immagine */
-            
+
+        }
+    }
+}
+
+/*#endregion responsive for ipad*/
+
+/* #region responsive for desktop */
+@media screen and (min-width: 992px) {
+
+
+    #topbar {
+        #logo {
+            font-size: 90px;
         }
 
+        /* il testo si allarga ulteriormente */
+    }
 
+    .recipe-card {
 
+        display: flex;
+
+        .recipe-video {
+            width: 150vw;
+            /* occupa la lunghezza giusta */
+        }
+
+        .recipe-info {
+            max-width: 100%;
+        }
+
+        .quick-notes ul {
+            flex-direction: row;
+            /* disposizione in colonna della lista quick notes*/
+        }
+
+    }
+
+    .social-networks .label {
+        display: block;
+        /*  visualizza i nomi delle piattaforme social */
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        
+        address{
+            text-align: left;
+        }
 
     }
 
 
 }
 
-/*#endregion responsive for ipad*/
+/* #endregion responsive for desktop */
